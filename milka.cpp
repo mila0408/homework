@@ -45,9 +45,9 @@ void deleteId(int id, Student*& stu, int& size) {
     {
         def[i] = stu[i];
     }
-    for ( int i = a; i < size; i++)
+    for ( int i = a +1; i < size; i++)
     {
-        def[i] = stu[i+1];
+        def[i- 1] = stu[i];
     }
     delete[] stu;
     stu = def;
